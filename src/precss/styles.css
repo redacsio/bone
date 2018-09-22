@@ -96,7 +96,7 @@ p strong{
   display: block;
   width: 188px;
   line-height: 18px;
-  margin: 24px 32px 28px 20px;
+  margin: 32px 28px 20px 24px;
   color: #4A4C52;
   font-weight: bold;
   font-size: 13px;
@@ -112,39 +112,60 @@ ul li{
   font-size: 15px;
   line-height: 24px;
   align: left;
-  margin: 8px 8px 8px 0;
-  color: #5C6066;
+  margin: 8px 0 8px 0;
+  font-weight:500;
 }
 
 li div.sidebar_icon{
   width: 24px;
   height: 24px;
   display: inline-block;
-  vertical-align: middle;
+  color: #AAAEB5;
+  font-size: 15px;
+  text-align: center;
 }
 
-li div img{
-  padding: 5px 4px;
-}
-
-li span{
+li div.text{
   display: inline-block;
   margin-left: 8px;
-  vertical-align: middle;
+  width: 138px;
+  color: #5C6066;
 }
 
 li a{
   color: #5C6066;
+  text-decoration: none;
 }
 
 li a:hover{
   color: #1A1A1B;
 }
 
+li a div.sidebar_icon:hover{
+  color: blue;
+}
+
+div.notification{
+  width: 22px;
+  height: 17px;
+  line-height: 17px;
+  font-size: 10px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 23px;
+  background-color: #EA414A;
+  border-radius: 4px;
+  color: #FFFFFF; 
+}
+
+div.notification_hidden{
+  display: none;
+}
+
 .content_main{
   width: 1200px;
   height: 100%;
-  margin: 100px 0 0 240px;
+  margin-left: 240px;
   display: flex;
   flex-shrink: 1;
   justify-content: center;
