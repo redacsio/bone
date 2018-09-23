@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500&subset=cyrillic');
 
 html, body{
   margin: 0;
@@ -52,8 +53,9 @@ img.img_logo{
 
 div.profile{
   margin: 12px 32px 12px 0px;
-  width: 190px;
+  width: 120px;
   height: 40px;
+  text-align: right;
 }
 
 .profile span{
@@ -61,15 +63,69 @@ div.profile{
   text-align: right;
   vertical-align: middle;
 }
+.profile a{
+  color: #FFFFFF;
+}
 
 img.img_profile{
   display: inline-block;
   align: right;
   vertical-align: middle;
-  margin-left: 8px;
+  margin-left: 14px;
+}
+
+.profile span.fa-angle-down{
+  margin-left: 27px;
+  font-size: 13px;
+}
+
+.system_language span.fa-angle-down{
+  margin-left: 8.23px;
+}
+
+span.language{
+  color: #FFFFFF;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 15px;
+  line-height: 40px;
 }
 
 /* profile end*/
+
+/* join start*/
+.registration_wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 64px auto 0;
+  max-width: 1440px;
+  height: 1080px;
+
+}
+
+.registration{
+  width: 432px;
+  height: 502px;
+  background-color: #FFFFFF;
+  margin-top: 111px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 2px;
+}
+
+.join{
+  width: 368px;
+  height: 46px;
+  margin: 40px 32px 25px 32px;
+}
+
+.join h1{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #0D0D0E;
+  font-size: 35px;
+  text-align: center;
+}
+/* join end*/
 
 .wrapper{
   display: flex;
@@ -137,12 +193,20 @@ li a{
   text-decoration: none;
 }
 
-li a:hover{
-  color: #1A1A1B;
+.sidebar_icon:hover{
+  color: red;
 }
 
-li a div.sidebar_icon:hover{
-  color: blue;
+.text:hover{
+  color: green;
+}
+
+.sidebar_icon:hover + .text{
+  color: green;
+}
+
+.text:hover + .sidebar_icon{
+  color: red;
 }
 
 div.notification{
