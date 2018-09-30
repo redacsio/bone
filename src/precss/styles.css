@@ -30,7 +30,7 @@ html, body{
 /* logo start*/
 
 div.logo{
-  width: 180px;
+  width: 181px;
   height: 32px;
   margin: 17px 8px 17px 32px;
   line-height: 32px;
@@ -45,6 +45,8 @@ img.img_logo{
 .logo span{
   display: inline-block;
   vertical-align: middle;
+  font-size: 18px;
+  font-weight: 900; 
 }
 
 /* logo end*/
@@ -75,8 +77,88 @@ img.img_profile{
 }
 
 .profile span.fa-angle-down{
-  margin-left: 27px;
+  padding-left: 27px;
   font-size: 13px;
+}
+
+.drop{
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+}
+
+.dropOut .triangle1, .dropOut .triangle2{
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #FFFFFF;
+  top: -8px;
+  left: 78%;
+  margin-left: -8px;
+  z-index: 2;
+}
+
+.dropOut .triangle2{
+  border-bottom: 8px solid #DADADA;
+  z-index: 1;
+  top: -9px;
+}
+
+.dropdownContain {
+  width: 160px;
+  position: absolute;
+  z-index: 10;
+  right: 6%;
+  top: 73px;
+}
+
+.dropOut {
+  width: 160px;
+  background: #FFFFFF;
+  float: left;
+  position: relative;
+  margin-top: 0px;
+  z-index: 2;
+  opacity: 1;
+  border-radius: 4px;
+  border: 1px solid #DADADA;
+  box-shadow: 0 1px 6px rgba(0,0,0,.15);
+  transition: all .1s ease-out;
+}
+
+.dropOut ul {
+  float: left;
+  margin: 2px;
+}
+.dropOut ul li {
+  text-align: left;
+  float: left;
+  width: 119px;
+  height: 24px;
+  padding: 8px 22px 8px 16px;
+  margin: 0px;
+  color: #44566C;
+  border-radius: 4px;
+  transition: background .1s ease-out;
+}
+
+.dropOut ul li:hover {
+  background: #FAFBFB;
+  cursor: pointer;
+}
+
+.drop:hover .dropOut {
+ opacity: 1; 
+ z-index: 10;
+ /*margin-top: 8px; */
+}
+
+.drop:hover .dropdownContain { 
+  top: 100px; 
+  z-index: 10;
 }
 
 .system_language span.fa-angle-down{
@@ -99,13 +181,11 @@ span.language{
   flex-wrap: nowrap;
   margin: 64px auto 0;
   max-width: 1440px;
-  height: 1080px;
-
 }
 
 .registration{
   width: 432px;
-  height: 502px;
+  height: 510px;
   background-color: #FFFFFF;
   margin-top: 111px;
   margin-right: auto;
@@ -113,18 +193,61 @@ span.language{
   border-radius: 2px;
 }
 
-.join{
+.registration h1{
+  display: inline-block;
   width: 368px;
   height: 46px;
-  margin: 40px 32px 25px 32px;
-}
-
-.join h1{
   font-family: 'IBM Plex Sans', sans-serif;
   color: #0D0D0E;
   font-size: 35px;
   text-align: center;
+  margin: 40px 32px 0px 40px;
 }
+
+form{
+  width: 100%;
+  border-bottom: 1px solid #E9EBF2;
+}
+
+label{
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 25px 0 6px 40px;
+}
+
+input{
+  width: 352px;
+  height: 40px;
+  line-height: 21px;
+  font-size: 15px;
+  border: none;
+  border: solid 1px #ccc;
+  border-radius: 2px;
+  margin-left: 40px;
+  padding-left: 12px;
+}
+
+#create_account{
+  width: 366px;
+  height: 40px;
+  line-height: 22px;
+  margin: 32px 0px 32px 40px;
+  border-radius: 4px;
+  border: solid 1px #ccc;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  background-color: #1F36E5;
+}
+
+div.account_existence{
+  width: 202px;
+  height: 21px;
+  margin: 16px auto;
+  font-size: 15px;
+}
+
 /* join end*/
 
 .wrapper{
@@ -193,20 +316,12 @@ li a{
   text-decoration: none;
 }
 
-.sidebar_icon:hover{
-  color: red;
+a:hover div.sidebar_icon {
+  color: #5C6066;
 }
 
-.text:hover{
-  color: green;
-}
-
-.sidebar_icon:hover + .text{
-  color: green;
-}
-
-.text:hover + .sidebar_icon{
-  color: red;
+a:hover div.text {
+  color: #1A1A1B;
 }
 
 div.notification{
