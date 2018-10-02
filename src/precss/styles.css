@@ -121,7 +121,7 @@ img.img_profile{
   float: left;
   position: relative;
   margin-top: 0px;
-  z-index: 2;
+  z-index: 0;
   opacity: 1;
   border-radius: 4px;
   border: 1px solid #DADADA;
@@ -152,7 +152,7 @@ img.img_profile{
 
 .drop:hover .dropOut {
  opacity: 1; 
- z-index: 10;
+ z-index: 100;
  /*margin-top: 8px; */
 }
 
@@ -228,6 +228,13 @@ input{
   padding-left: 12px;
 }
 
+.inputicon{
+  position: relative;
+  margin-left: -35px;
+  font-size: 16px;
+  color: #D0D4D9;
+}
+
 #create_account{
   width: 366px;
   height: 40px;
@@ -235,6 +242,7 @@ input{
   margin: 32px 0px 32px 40px;
   border-radius: 4px;
   border: solid 1px #ccc;
+  font-family: 'Lato', sans-serif;
   padding: 0;
   color: white;
   font-weight: bold;
@@ -242,10 +250,11 @@ input{
 }
 
 div.account_existence{
-  width: 202px;
+  width: 220px;
   height: 21px;
   margin: 16px auto;
   font-size: 15px;
+  text-align: center;
 }
 
 /* join end*/
@@ -256,19 +265,19 @@ div.account_existence{
   flex-wrap: nowrap;
   margin: 64px auto 0;
   max-width: 1440px;
-  height: 1080px;
+  min-width: 1280px;
+  height: 100vh;
   background-color: #FFFFFF;
-  /* border: 1px solid #E9EBF2; */
 }
 
 .sidebar{
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   width: 239px;
   height: 100%;
   flex-shrink: 0;
+  background-color: #FFFFFF;
   border-right: 1px solid #E9EBF2;
-  /* background-color: green; for test */ 
 }
 
 p strong{
@@ -353,6 +362,7 @@ div.notification_hidden{
 
 .col_content{
   width: 69px;
+  height: 100%;
   background-color: rgba(227, 0, 0, 0.3);
   flex-shrink: 0;
   margin: 0 13px;
