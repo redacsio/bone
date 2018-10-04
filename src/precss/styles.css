@@ -1,10 +1,73 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500&subset=cyrillic');
+/* Webfont: Lato-Black */@font-face {
+    font-family: 'LatoWebBlack';
+    src: url('../fonts/Lato-Black.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Lato-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Lato-Black.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/Lato-Black.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Lato-Black.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: Lato-Bold */@font-face {
+    font-family: 'LatoWebBold';
+    src: url('../fonts/Lato-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Lato-Bold.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/Lato-Bold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Lato-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: Lato-Regular */@font-face {
+    font-family: 'LatoWeb';
+    src: url('../fonts/Lato-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
 
+/* Webfont: Lato-Semibold */@font-face {
+    font-family: 'LatoWebSemibold';
+    src: url('../fonts/Lato-Semibold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Lato-Semibold.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/Lato-Semibold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Lato-Semibold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), 
+  url("../fonts/IBMPlexSans-Medium.woff") format('woff'),
+  url("../fonts/IBMPlexSans-Medium-Cyrillic.woff2") format('woff2'),
+  url("../fonts/IBMPlexSans-Medium.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local("IBM Plex Sans SemiBold"), local("IBMPlexSans-SemiBold"), 
+  url("../fonts/IBMPlexSans-SemiBold.woff") format('woff'),
+  url("../fonts/IBMPlexSans-SemiBold-Cyrillic.woff2") format('woff2'),
+  url("../fonts/IBMPlexSans-SemiBold.ttf") format('truetype');
+   }
+  
 html, body{
   margin: 0;
   background-color: #D8DADB;
-  font-family: 'Lato', sans-serif;
+  font-family: 'LatoWeb', sans-serif;
 }
 
 .top_header{
@@ -22,6 +85,7 @@ html, body{
 .header_wrapper{
   margin: 0 auto;
   max-width: 1440px;
+  min-width: 1280px;
   height: 64px;
   display: flex;
   justify-content: space-between;
@@ -30,7 +94,7 @@ html, body{
 /* logo start*/
 
 div.logo{
-  width: 181px;
+  width: 185px;
   height: 32px;
   margin: 17px 8px 17px 32px;
   line-height: 32px;
@@ -45,8 +109,8 @@ img.img_logo{
 .logo span{
   display: inline-block;
   vertical-align: middle;
+  font-family: 'LatoWebBlack', sans-serif;
   font-size: 18px;
-  font-weight: 900; 
 }
 
 /* logo end*/
@@ -168,6 +232,8 @@ img.img_profile{
 span.language{
   color: #FFFFFF;
   font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: 15px;
   line-height: 40px;
 }
@@ -198,6 +264,8 @@ span.language{
   width: 368px;
   height: 46px;
   font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
   color: #0D0D0E;
   font-size: 35px;
   text-align: center;
@@ -242,11 +310,22 @@ input{
   margin: 32px 0px 32px 40px;
   border-radius: 4px;
   border: solid 1px #ccc;
-  font-family: 'Lato', sans-serif;
+  font-family: 'LatoWebBold', sans-serif;
+  letter-spacing: 1px;
   padding: 0;
   color: white;
-  font-weight: bold;
   background-color: #1F36E5;
+  border-color: #1F36E5;
+}
+
+.buttondisabled{
+  background-color: #81868C;
+  border-color: #81868C;
+}
+
+#create_account:hover{
+  background-color: #4892FF;
+  border-color: #4892FF;
 }
 
 div.account_existence{
@@ -278,6 +357,7 @@ div.account_existence{
   flex-shrink: 0;
   background-color: #FFFFFF;
   border-right: 1px solid #E9EBF2;
+  font-family: 'LatoWebSemibold', sans-serif;
 }
 
 p strong{
