@@ -78,7 +78,7 @@ html, body{
   z-index: 3;
   top: 0;
   left: 0;
-  color: white;
+  color: #FFFFFF;
   font-size: 18px;
 }
 
@@ -142,6 +142,11 @@ img.img_profile{
 
 .profile span.fa-angle-down{
   padding-left: 27px;
+  font-size: 13px;
+}
+
+.profile span.fa-sort{
+  padding-left: 9px;
   font-size: 13px;
 }
 
@@ -263,10 +268,11 @@ span.language{
   display: inline-block;
   width: 368px;
   height: 46px;
+  line-height: 46px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
-  color: #0D0D0E;
+  color: #1A1A1B;
   font-size: 35px;
   text-align: center;
   margin: 40px 32px 0px 40px;
@@ -306,6 +312,18 @@ input{
   color: #D0D4D9;
 }
 
+::-webkit-contacts-auto-fill-button {
+   visibility: hidden;
+   pointer-events: none;
+   position: absolute;
+   right: 0;
+}
+
+input:focus{
+  border-color: #1F36E5;
+  color: #5C6066;
+}
+
 #create_account{
   width: 366px;
   height: 40px;
@@ -328,8 +346,8 @@ input{
 }
 
 #create_account:hover{
-  background-color: #4892FF;
-  border-color: #4892FF;
+  background-color: #374EFF;
+  border-color: #374EFF;
 }
 
 div.account_existence{
@@ -341,7 +359,7 @@ div.account_existence{
 }
 
 div.account_existence a:hover{
-  color: #4892FF;
+  color: #374EFF;
 }
 
 /* join end*/
