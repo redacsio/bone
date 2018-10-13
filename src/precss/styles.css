@@ -275,7 +275,7 @@ span.language{
   color: #1A1A1B;
   font-size: 35px;
   text-align: center;
-  margin: 40px 32px 0px 40px;
+  margin: 40px 32px 0px 32px;
 }
 
 form{
@@ -293,11 +293,18 @@ label{
   color: #5C6066;
 }
 
-input{
-  width: 352px;
+.input_error{
+  background-color: #EDEFF2;
+  border-color: #EA414A; 
+}
+
+.input{
+  width: 340px;
   height: 40px;
   line-height: 21px;
   font-size: 15px;
+  background-color: #FFFFFF;
+  color: #1A1A1B;
   border: none;
   border: solid 1px #ccc;
   border-radius: 2px;
@@ -321,22 +328,7 @@ input{
 
 input:focus{
   border-color: #1F36E5;
-  color: #5C6066;
-}
-
-#create_account{
-  width: 366px;
-  height: 40px;
-  line-height: 22px;
-  margin: 32px 0px 32px 40px;
-  border-radius: 4px;
-  border: solid 1px #ccc;
-  font-weight: bold;
-  font-size: 15px;
-  padding: 0;
-  color: #FFFFFF;
-  background-color: #1F36E5;
-  border-color: #1F36E5;
+  color: #1A1A1B;
 }
 
 .buttondisabled{
@@ -344,13 +336,28 @@ input:focus{
   border-color: #81868C;
 }
 
-#create_account:hover{
+.button{
+  width: 352px;
+  height: 40px;
+  line-height: 22px;
+  margin: 32px 40px;
+  border-radius: 4px;
+  border: solid 1px #ccc;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 0;
+  color: #FFFFFF;
+  background-color: #1F36E5;
+  border-color: #1F36E5;
+}
+
+.button:hover{
   background-color: #374EFF;
   border-color: #374EFF;
 }
 
 div.account_existence{
-  width: 220px;
+  width: 300px;
   height: 21px;
   margin: 16px auto;
   font-size: 15px;
@@ -359,6 +366,7 @@ div.account_existence{
 
 div.account_existence a{
   text-decoration: none;
+  color: #1F36E5;
 }
 
 div.account_existence a:hover{
@@ -366,6 +374,126 @@ div.account_existence a:hover{
 }
 
 /* join end*/
+
+/*log in start*/
+
+.login_wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 64px auto 0;
+  max-width: 1440px;
+}
+
+.login_page{
+  width: 432px;
+  height: 443px;
+  background-color: #FFFFFF;
+  margin-top: 111px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 2px;
+}
+
+.login_page h1{
+  display: inline-block;
+  width: 368px;
+  height: 46px;
+  line-height: 46px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #1A1A1B;
+  font-size: 35px;
+  text-align: center;
+  margin: 40px 32px 0px 40px;
+}
+
+div.reset_password{
+  width: 352px;
+  height: 21px;
+  font-size: 15px;
+  text-align: right;
+  line-height: 21px;
+  margin-left: 40px;
+  margin-top: 6px;
+}
+
+div.reset_password a{
+  text-decoration: none;
+  color: #1F36E5;
+}
+
+div.reset_password a:hover{
+  color: #374EFF;
+}
+
+/*log in end*/
+
+/*reset password page start */
+
+.reset_page{
+  width: 432px;
+  height: 329px;
+  background-color: #FFFFFF;
+  margin-top: 111px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 2px;
+}
+
+.reset_page h1{
+  display: inline-block;
+  width: 368px;
+  height: 46px;
+  line-height: 46px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #1A1A1B;
+  font-size: 35px;
+  text-align: center;
+  margin: 40px 32px 0px 32px;
+}
+
+/*reset password page end */
+/*mail sent page start */
+
+.mail_sent{
+  width: 432px;
+  height: 264px;
+  background-color: #FFFFFF;
+  margin-top: 111px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 2px;
+}
+
+.mail_sent h1{
+  display: inline-block;
+  width: 368px;
+  height: 46px;
+  line-height: 46px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #1A1A1B;
+  font-size: 35px;
+  text-align: center;
+  margin: 40px 32px 0px 32px;
+}
+
+.mail_sent_message{
+  width: 352px;
+  display: inline-block;
+  text-align: center;
+  margin: 24px 40px 0px 40px; 
+  font-family: 'LatoWeb', sans-serif;
+  font-size: 15px;
+  color: #1A1A1B;
+}
+
+/*mail sent page end */
 
 .wrapper{
   display: flex;
