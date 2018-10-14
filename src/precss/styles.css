@@ -116,36 +116,47 @@ img.img_logo{
 /* logo end*/
 
 /* profile start*/
-
 div.profile{
-  margin: 12px 32px 12px 0px;
-  width: 120px;
-  height: 40px;
+  width: 200px;
+  height: 38px;
+  margin: 13px 41px 13px 0;
+  display: inline-block;
+  line-height: 38px;
   text-align: right;
 }
 
-.profile span{
-  display: inline-block;
-  text-align: right;
-  vertical-align: middle;
-}
 .profile a{
   color: #FFFFFF;
+  margin-left: 24px;
+  text-decoration: none;
+}
+
+div.circle_notification{
+  position: relative;
+  width: 14.77px;
+  height: 14.77px;
+  top: -9px;
+  left: -9px;
+  border-radius: 14.77px;
+  line-height: 14.77px;
+  font-size: 8px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #EA414A;
+  color: #FFFFFF; 
+  z-index: 4;
 }
 
 img.img_profile{
   display: inline-block;
   align: right;
   vertical-align: middle;
-  margin-left: 14px;
+  width: 38px;
+  height: 38px;
 }
 
-.profile span.fa-angle-down{
-  padding-left: 27px;
-  font-size: 13px;
-}
-
-.profile span.fa-sort{
+.profile .fa-sort{
   padding-left: 9px;
   font-size: 13px;
 }
@@ -153,8 +164,6 @@ img.img_profile{
 .drop{
   position: relative;
   display: inline-block;
-  padding-top: 10px;
-  padding-bottom: 10px; 
 }
 
 .dropOut .triangle1, .dropOut .triangle2{
