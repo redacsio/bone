@@ -283,6 +283,10 @@ form{
   border-bottom: 1px solid #E9EBF2;
 }
 
+form.link_button{
+  border-bottom: none;
+}
+
 label{
   display: inline-block;
   font-size: 12px;
@@ -291,11 +295,6 @@ label{
   font-family: 'LatoWebSemibold';
   letter-spacing: 1px;
   color: #5C6066;
-}
-
-.input_error{
-  background-color: #EDEFF2;
-  border-color: #EA414A; 
 }
 
 .input{
@@ -312,6 +311,11 @@ label{
   padding-left: 12px;
 }
 
+input:invalid{
+  background-color: #EDEFF2;
+  border-color: #EA414A; 
+}
+
 .inputicon{
   position: relative;
   margin-left: -35px;
@@ -326,9 +330,9 @@ label{
    right: 0;
 }
 
-input:focus{
-  border-color: #1F36E5;
-  color: #1A1A1B;
+input:active, input:hover, input:focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 .buttondisabled{
@@ -354,6 +358,11 @@ input:focus{
 .button:hover{
   background-color: #374EFF;
   border-color: #374EFF;
+}
+
+.button:active, .button:hover, .button:focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 div.account_existence{
