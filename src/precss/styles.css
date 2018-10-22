@@ -189,8 +189,8 @@ img.img_profile{
   width: 160px;
   position: absolute;
   z-index: 10;
-  right: 6%;
-  top: 81px;
+  right: -28px;
+  top: 72px;
   opacity: 1;
 }
 
@@ -220,7 +220,7 @@ img.img_profile{
   padding: 8px 22px 8px 16px;
   margin: 0px;
   color: #44566C;
-  border-radius: 4px;
+  border-radius: 3px;
   transition: background .1s ease-out;
 }
 
