@@ -319,6 +319,14 @@ input:invalid{
   border-color: #EA414A; 
 }
 
+input:focus + i{
+  color: #5C6066;
+}
+
+input:focus{
+  border-color: #1F36E5;
+}
+
 .inputicon{
   position: relative;
   margin-left: -35px;
