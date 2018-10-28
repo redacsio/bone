@@ -203,7 +203,7 @@ input[type="checkbox"]{
   position: absolute;
   z-index: 10;
   right: -28px;
-  top: 72px;
+  top: 60px;
   opacity: 0;
 }
 
