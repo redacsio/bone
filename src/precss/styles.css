@@ -161,6 +161,19 @@ img.img_profile{
   font-size: 13px;
 }
 
+.drop .drop_checkbox{
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.drop .drop_checkbox:hover{
+  cursor: pointer;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
 .drop{
   position: relative;
   display: inline-block;
@@ -191,6 +204,10 @@ img.img_profile{
   z-index: 10;
   right: -28px;
   top: 72px;
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + .dropdownContain{
   opacity: 1;
 }
 
@@ -227,10 +244,6 @@ img.img_profile{
 .dropOut ul li:hover {
   background: #EDEFF2;
   cursor: pointer;
-}
-
-.drop:hover .dropdownContain{
-  opacity: 1;
 }
 
 .system_language span.fa-angle-down{
